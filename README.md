@@ -1,4 +1,4 @@
-# 🌟 Node.js Learning Repository  
+ 
 
 This repository is created to explore and practice **Node.js** step by step. It contains both the fundamental concepts of Node.js and small projects that apply these concepts in real-world scenarios. The purpose of this repository is to build a strong foundation in backend development while also gaining hands-on experience by working on practical examples.  
 
