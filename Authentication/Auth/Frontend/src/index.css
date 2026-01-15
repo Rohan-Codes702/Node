@@ -1,0 +1,127 @@
+/* General body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Form header */
+form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Form spacing */
+form div {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Labels styling */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Input fields styling */
+form input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #6B73FF;
+  box-shadow: 0 0 5px rgba(107, 115, 255, 0.5);
+}
+
+/* Submit button styling */
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6B73FF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #4a54e1;
+  transform: translateY(-2px);
+}
+
+/* Links and text */
+form span {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+form a {
+  color: #6B73FF;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+/* ToastContainer styling */
+.Toastify__toast {
+  font-size: 14px;
+}
+
+.Toastify__toast--success {
+  background: #6B73FF;
+  color: white;
+}
+
+.Toastify__toast--error {
+  background: #ef4444;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}

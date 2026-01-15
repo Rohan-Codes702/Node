@@ -1,0 +1,15 @@
+import { toast } from "react-toastify";
+
+export const handleSucess = (message) => {
+    toast.error(message,{
+        position:'top-right'
+    });
+
+};
+
+export const handleError = (message) => {
+    toast.error(message,{
+        position:'top-right'
+    });
+    
+};
