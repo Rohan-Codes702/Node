@@ -45,8 +45,13 @@ app.post("/login",async(req,res)=>{
     const token =jwt.sign(
         {username:founduser.username},
         secretKey,
-        {expiresIn:"1h"}
+        {expiresIn:"5m"}
     );
+     res.cookie("token", token, {
+    httpOnly: true,
+    secure: false,
+    maxAge: 3600000
+  });
     res.json({
         message: "Login successful",
         token: token
